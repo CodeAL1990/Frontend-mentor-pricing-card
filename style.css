@@ -1,0 +1,134 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    /* width: 600px;
+    height: 400px; */
+    box-shadow: 1px 0px 9px 0px rgba(0,0,0,0.42);
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 100px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55%;
+    color: white;
+}
+
+.join {
+    height: 45%;
+    padding: 25px;
+}
+
+
+
+.sub {
+    background-color: #1ccdd9;
+    /* width: 50%; */
+    height: 100%;
+    padding: 25px;
+    flex-basis: 50%;
+}
+
+.why {
+    background-color: #0ae6f5;
+    /* width: 50%; */
+    height: 100%;
+    padding: 25px;
+    flex-basis: 50%;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.per {
+    color: rgb(91, 106, 107);
+    margin-left: 5px;
+}
+
+#sub-text {
+    font-size: 0.9rem;
+}
+
+#list-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba(71, 75, 94, 0.5);
+}
+
+ul > li {
+    margin-bottom: 3px;
+    font-size: 0.8rem;
+}
+
+button {
+    background-color: #b1fa14;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    width: 215px; 
+}
+
+button:hover {
+    cursor: pointer;
+    color: rgba(126, 176, 19, 0.69);
+    transform: scale(1.02);
+}
+
+.join > h2 {
+    color: #0ae6f5;
+}
+
+.join > h3 {
+    color: #b1fa14;
+}
+
+.join > p {
+    color: rgba(71, 75, 94, 0.5);
+}
+
+
+.join > h2, .join > h3, .sub > h3, .sub > p, .why > h3 {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 550px;
+        height: 400px;
+    }
+
+    .bottom {
+        flex-direction: row;
+    }
+
+}
